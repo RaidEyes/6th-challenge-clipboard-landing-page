@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+ h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color: var(--color-text);
+  }
+  p {
+    overflow-wrap: break-word;
+    color: var(--color-text-secondary);
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /* Variables */
+  :root {
+    /* color */
+    --primary-color: hsl(171, 66%, 44%);
+    --secondary-color:  hsl(233, 100%, 69%);
+    --color-text: hsl(210, 10%, 33%);
+    --color-text-secondary: hsl(201, 11%, 66%);
+    --button-text-color: hsl(100, 100%, 100%);
+    /* padding */
+    --padding-inline: 2.1rem;
+    --padding-inline-div: 1.5rem;
+    --padding-block: 2.5rem;
+    /* font weight and size */
+    --normal-font-size: 16px;
+    --font-size-title: 1.75rem;
+    --normal-font-weight: 400;
+    --big-font-weight: 600;
+  }
+  /*----------CSS Styles------------ */
+  * {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--color-text);
+  }
+
+  #header-section, #main-section {
+    padding-inline: var(--padding-inline);
+    text-align: center;
+  }
+
+  h3 {
+    font-size: var(--font-size-title);
+  }
+  /* ---------Header---------------- */
+  #header-section {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+  #header-section svg {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+/* ---Button CSS--- */
+   button {
+   width: 100%;
+   padding-block: 1rem;
+   border-style: none;
+   border-radius: 2rem;
+   color: var(--button-text-color);
+   cursor: pointer;
+   transition: background-color ease-in-out 200ms;
+  }
+
+  .download-IOS {
+    background-color: var(--primary-color);
+  }
+
+  .download-MAC {
+    background-color: var(--secondary-color);
+  }
+  /* ---------Main Section---------- */
+  /* ---------Keep track------------ */
+  .keep-track {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    align-items: center;
+
+  }
+  .keep-track .keep-track-title, .keep-track-description {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .keep-track .keep-track-img {
+    margin-bottom: 2rem;
+  }
+
+  .keep-track .keep-track-box {
+    padding-block: var(--padding-block);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+.keep-track-box .keep-track-box-title {
+    font-size: calc(var(--font-size-title) - 0.25rem);
+    margin-bottom: 1rem;
+}
+  /* ---------Access Clipboard------ */
+  .access-section {
+    padding-block: var(--padding-block);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+        align-items: center;
+  }
+  /* ---------Supercharge----------- */
+  .supercharge {
+    padding-block: var(--padding-block);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .supercharge .supercharge-description {
+        padding-block: var(--padding-block);
+    }
+
+  .supercharge .supercharge-box {
+    padding-block: var(--padding-block);
+  }
+  .supercharge .supercharge-box .supercharge-box-title {
+    padding-block: 1rem;
+  }
+  .supercharge svg, img {
+    display: inline-flex;
+  }
+
+  .customer-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: fit-content;
+    padding-block: var(--padding-block);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ---------End Section----------- */
+  .end-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: cal(var(--padding-block)+1rem);
+  }
+  /* ---------Footer---------------- */
+  #footer-section {
+    margin-top: 4rem;
+    background-color: hsla(201, 11%, 66%, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer-section > svg {
+    display: block;
+    padding-block: var(--padding-block);
+  }
+
+  #footer-section .nav-bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+      }
+
+  a {
+    text-decoration: none;
+  }
+  .contact-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: var(--padding-block);
+    gap: 2rem;
+  }
+  .end-footer {
+    padding-block: var(--padding-block);
+    background-color:  hsla(201, 11%, 66%, 0.15);
+      }
+
+      a:hover {
+        color: var(--primary-color);
+      }
+      button:hover {
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+      }
+  /* ---------Media query----------- */
+      @media (min-width: 1440px) {
+        #header-section p {
+            width: 35%;
+        }
+         .button-box {
+            flex-direction: row;
+        }
+        button {
+            max-width: 15rem;
+        }
+      /* Keep track section */
+      .keep-track .keep-track-description {
+        width: 35%;
+        margin: auto;
+      }
+      .keep-track {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-content: center;
+        justify-content: center;
+      }
+      .keep-track .keep-track-title, .keep-track-description {
+        grid-column: 1/3;
+    }
+    .keep-track .keep-track-box {
+        text-align: left;
+        align-items: start;
+        padding-inline: var(--padding-inline);
+        gap: 5rem;
+        width: 70%;
+        padding-left: 8rem;
+      }
+      .keep-track img {
+        position: relative;
+        left: -3.9rem;
+      }
+      /* Supercharge */
+      .supercharge {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+      .supercharge .supercharge-title, .supercharge-description {
+        flex: 0 0 100%;
+      }
+      .supercharge-description {
+        padding-block: 0 !important;
+      }
+      .supercharge-box {
+        width: 25%;
+      }
+      .customer-logos {
+        flex-direction: row;
+        flex: 0 0 75%;
+        justify-content: space-between;
+      }
+      /* End section */
+      .end-section .end-section-description {
+        width: 40%;
+        margin: auto;
+      }
+      /* Footer */
+      #footer-section .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+      }
+      #footer-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      #footer-section .contact-logos {
+        flex-direction: row;
+      }
+    
+    }
